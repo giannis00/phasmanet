@@ -812,7 +812,7 @@ saved and loaded together with the model.</p>
 <span class="n">cal</span> <span class="o">=</span> <span class="n">MonotoneCalibrator</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">pred_val</span><span class="p">,</span> <span class="n">y_val</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span> <span class="n">min_bin</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
 <span class="n">pred_test_cal</span> <span class="o">=</span> <span class="n">cal</span><span class="p">(</span><span class="n">pred_test</span><span class="p">)</span>
 
-<span class="n">cal</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>                       <span class="c1"># knots as plain lists, e.g. to store as JSON</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">cal</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>                   <span class="c1"># knots as plain lists, e.g. to store as JSON</span>
 <span class="n">cal</span> <span class="o">=</span> <span class="n">MonotoneCalibrator</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
 </code></pre></div>
 <p>If there are too few distinct bins, the calibrator stays the identity map
