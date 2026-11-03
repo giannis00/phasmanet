@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/</loc>
+         <loc>https://giannis00.github.io/phasmanet/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/api/</loc>
+         <loc>https://giannis00.github.io/phasmanet/api/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/architecture/</loc>
+         <loc>https://giannis00.github.io/phasmanet/architecture/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/benchmarks/</loc>
+         <loc>https://giannis00.github.io/phasmanet/benchmarks/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/calibration/</loc>
+         <loc>https://giannis00.github.io/phasmanet/calibration/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/citation/</loc>
+         <loc>https://giannis00.github.io/phasmanet/citation/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/classification/</loc>
+         <loc>https://giannis00.github.io/phasmanet/classification/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/custom/</loc>
+         <loc>https://giannis00.github.io/phasmanet/custom/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/getting-started/</loc>
+         <loc>https://giannis00.github.io/phasmanet/getting-started/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/gw/</loc>
+         <loc>https://giannis00.github.io/phasmanet/gw/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/hyperparameters/</loc>
+         <loc>https://giannis00.github.io/phasmanet/hyperparameters/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
     <url>
-         <loc>https://giannis00.github.io/PhasmaNet-SNR/regression/</loc>
+         <loc>https://giannis00.github.io/phasmanet/regression/</loc>
          <lastmod>2026-11-03</lastmod>
     </url>
 </urlset>
