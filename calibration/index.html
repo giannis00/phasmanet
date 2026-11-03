@@ -792,7 +792,7 @@ low in some range of the target. PhasmaNet can correct this after training with 
 <li>The knots are made non-decreasing, extended to the observed range, and joined by a
    monotone piecewise cubic Hermite interpolant (PCHIP).</li>
 </ol>
-<p>Because the map is monotone, the order of the predictions never changes; only their values
+<p>Because the map is monotone, the order of the predictions never changes. Only their values
 are corrected.</p>
 <h2 id="with-the-estimator">With the estimator<a class="headerlink" href="#with-the-estimator" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">phasmanet</span><span class="w"> </span><span class="kn">import</span> <span class="n">PhasmaNetRegressor</span>
@@ -804,7 +804,7 @@ are corrected.</p>
 <p>The calibrator is fitted on the validation split only, never on the test data, and it is
 saved and loaded together with the model.</p>
 <p><img alt="Fitted calibrator" src="../img/calibration.png" width="420" /></p>
-<p>In the example above (a skewed, positive target, a small model trained for 40 epochs), calibration lowered the mean absolute percentage error on the test set from 6.40% to 4.86%, using 39 knots. How much it helps depends on how biased the raw predictions are; when they are already unbiased the calibrator stays close to the identity.</p>
+<p>In the example above (a skewed, positive target, a small model trained for 40 epochs), calibration lowered the mean absolute percentage error on the test set from 6.40% to 4.86%, using 39 knots. How much it helps depends on how biased the raw predictions are. When they are already unbiased the calibrator stays close to the identity.</p>
 <h2 id="on-its-own">On its own<a class="headerlink" href="#on-its-own" title="Permanent link">&para;</a></h2>
 <p><code>MonotoneCalibrator</code> works with the predictions of any model:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">phasmanet</span><span class="w"> </span><span class="kn">import</span> <span class="n">MonotoneCalibrator</span>

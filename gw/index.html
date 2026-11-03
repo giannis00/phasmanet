@@ -962,7 +962,7 @@ PyCBC: <code>Detector("H1").antenna_pattern(ra, dec, psi, t_gps)</code>.</p>
 </tr>
 <tr>
 <td>Test accuracy</td>
-<td>100 − MAPE = 98.73 % raw, 99.29 % calibrated; 99.39 % for <span class="arithmatex">\(\rho &gt; 8\)</span> (see the paper)</td>
+<td>100 − MAPE = 98.73 % raw, 99.29 % calibrated. 99.39 % for <span class="arithmatex">\(\rho &gt; 8\)</span> (see the paper)</td>
 </tr>
 </tbody>
 </table>
@@ -976,16 +976,16 @@ the fraction of an isotropic population (masses uniform in 5 to 80 <span class="
 detector, as a function of distance. The antenna patterns were drawn from the standard
 expressions for an L-shaped detector with isotropic sky positions and polarisations.</p>
 <p><img alt="SNR versus distance and detectable fraction" src="../img/gw_population.png" /></p>
-<p>In this population, 73% of the binaries have <span class="arithmatex">\(\rho &gt; 8\)</span> at 500 Mpc, 49% at 1000 Mpc and 22% at 2000 Mpc. The 20,000 SNRs were computed in one call; the distance dependence then follows exactly from <span class="arithmatex">\(1/d_L\)</span> without new evaluations.</p>
+<p>In this population, 73% of the binaries have <span class="arithmatex">\(\rho &gt; 8\)</span> at 500 Mpc, 49% at 1000 Mpc and 22% at 2000 Mpc. The 20,000 SNRs were computed in one call. The distance dependence then follows exactly from <span class="arithmatex">\(1/d_L\)</span> without new evaluations.</p>
 <h2 id="speed">Speed<a class="headerlink" href="#speed" title="Permanent link">&para;</a></h2>
 <p>The surrogate evaluates batches of up to <code>batch_size=65536</code> binaries at once. The paper
 reports about <span class="arithmatex">\(1.2\times10^5\)</span> evaluations per second on a single GPU (a catalogue of
-<span class="arithmatex">\(10^6\)</span> injections in about 8 s). On a CPU it is much slower; use a GPU for
+<span class="arithmatex">\(10^6\)</span> injections in about 8 s). On a CPU it is much slower. Use a GPU for
 catalogue-scale work (<code>device="cuda"</code>, or the default automatic choice).</p>
 <h2 id="several-detectors">Several detectors<a class="headerlink" href="#several-detectors" title="Permanent link">&para;</a></h2>
 <p>The network optimal SNR is the quadrature sum of the single-detector values,
 <span class="arithmatex">\(\rho_{\rm net} = \sqrt{\sum_d \rho_d^2}\)</span>. The bundled model is trained for one detector
-and one PSD; a network needs one surrogate per detector configuration.</p>
+and one PSD. A network needs one surrogate per detector configuration.</p>
 
 
 
