@@ -919,7 +919,8 @@ bottom-up:</p>
 <p>The <span class="arithmatex">\(K-1\)</span> gate projections are shared across the <span class="arithmatex">\(R\)</span> passes. <code>num_feedback=0</code> disables
 feedback.</p>
 <h2 id="readout-and-head">Readout and head<a class="headerlink" href="#readout-and-head" title="Permanent link">&para;</a></h2>
-<p>The top-level tokens are layer-normalised and mean-pooled, and a two-layer MLP produces the output: one value per target for
+<p>The top-level tokens are layer-normalised and mean-pooled (the <code>pool</code> method, which a
+subclass can override), and a two-layer MLP produces the output: one value per target for
 regression, one logit per class for classification.</p>
 <h2 id="in-code">In code<a class="headerlink" href="#in-code" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">phasmanet</span><span class="w"> </span><span class="kn">import</span> <span class="n">PhasmaNet</span>

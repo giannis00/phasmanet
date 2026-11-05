@@ -862,6 +862,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#phasmanet.PhasmaNet.pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pool
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1334,6 +1345,17 @@
     <span class="md-ellipsis">
       
         forward
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phasmanet.PhasmaNet.pool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        pool
       
     </span>
   </a>
@@ -2381,6 +2403,27 @@ for classification logits).</p>
 </code></pre></div>
 
     <div class="doc doc-contents ">
+
+
+    </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+<h4 id="phasmanet.PhasmaNet.pool" class="doc doc-heading">
+            <span class="doc doc-object-name doc-function-name">pool</span>
+
+
+<a href="#phasmanet.PhasmaNet.pool" class="headerlink" title="Permanent link">&para;</a></h4>
+<div class="doc-signature highlight"><pre><span></span><code><span class="nf">pool</span><span class="p">(</span><span class="n">tokens</span><span class="p">:</span> <span class="n">Tensor</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">torch</span><span class="o">.</span><span class="n">Tensor</span>
+</code></pre></div>
+
+    <div class="doc doc-contents ">
+
+        <p>Pool the normalised top-level tokens (B, T, D) into one vector (B, D).</p>
+<p>Mean pooling, as in the paper. Override in a subclass to change it.</p>
 
 
     </div>
