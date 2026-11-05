@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "PhasmaNet"
+version: 0.1.1
+license: MIT
+repository-code: "https://github.com/giannis00/phasmanet"
+authors:
+  - family-names: Tsioulis
+    given-names: Ioannis
+  - family-names: Tefas
+    given-names: Anastasios
+  - family-names: Stergioulas
+    given-names: Nikolaos
+preferred-citation:
+  type: article
+  title: "ΦasmaNet: A Staged Spectral Token-Refinement Architecture for Fast Gravitational-Wave Signal-to-Noise Ratio Prediction"
+  authors:
+    - family-names: Tsioulis
+      given-names: Ioannis
+    - family-names: Tefas
+      given-names: Anastasios
+    - family-names: Stergioulas
+      given-names: Nikolaos
+  year: 2026
+  journal: "arXiv preprint"
+  url: "https://arxiv.org/abs/2611.05309"
+  identifiers:
+    - type: doi
+      value: "10.48550/arXiv.2611.05309"
+    - type: url
+      value: "https://arxiv.org/abs/2611.05309"

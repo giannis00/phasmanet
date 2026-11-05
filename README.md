@@ -7,6 +7,12 @@
 
 <h1 align="center">PhasmaNet</h1>
 
+<p align="center">
+  <a href="https://arxiv.org/abs/2611.05309"><img src="https://img.shields.io/badge/arXiv-2611.05309-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://pypi.org/project/phasmanet/"><img src="https://img.shields.io/pypi/v/phasmanet.svg" alt="PyPI"></a>
+  <a href="https://giannis00.github.io/phasmanet/"><img src="https://img.shields.io/badge/docs-online-blue.svg" alt="Docs"></a>
+</p>
+
 ## Dataset Generation
 
 The datasets were generated using the script:
@@ -83,3 +89,27 @@ conda run -n pytorch python plot_snr_pred_vs_orig.py \
 Key flags: `--calibrated` plots `pred_lin_cal` (requires a calibrated NPZ),
 `--mode {hexbin,scatter}` selects the render style, `--no-log-scale` switches to
 linear axes, and `--max-points` caps the sampled points in scatter mode.
+
+## Citation
+
+This repository contains the training scripts, baselines and diagnostics of the paper:
+
+> I. Tsioulis, A. Tefas, N. Stergioulas, *ΦasmaNet: A Staged Spectral Token-Refinement
+> Architecture for Fast Gravitational-Wave Signal-to-Noise Ratio Prediction*,
+> [arXiv:2611.05309](https://arxiv.org/abs/2611.05309) (2026).
+
+```bibtex
+@misc{tsioulis2026phasmanet,
+  title         = {{$\Phi$asmaNet}: A Staged Spectral Token-Refinement Architecture for Fast
+                   Gravitational-Wave Signal-to-Noise Ratio Prediction},
+  author        = {Tsioulis, Ioannis and Tefas, Anastasios and Stergioulas, Nikolaos},
+  year          = {2026},
+  eprint        = {2611.05309},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2611.05309}
+}
+```
+
+The architecture is also available as a Python package: `pip install phasmanet`
+([PyPI](https://pypi.org/project/phasmanet/), [documentation](https://giannis00.github.io/phasmanet/)).
